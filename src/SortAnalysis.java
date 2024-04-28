@@ -45,13 +45,9 @@ public class SortAnalysis {
                     sw.stop();
                     if (i > 0) quick += sw.getElapsedTime();
                 }
-                System.out.printf("Size of %.0f%n", size);
+                System.out.printf("Size of %.0f:%n", size);
                 System.out.printf("Bubble: %.1f   Selection: %.1f   Insertion: %.1f   Merge: %.1f   Quick: %.1f%n", bubble / 10.0, selection / 10.0, insertion / 10.0, merge / 10.0, quick / 10.0);
-                bubble = 0;
-                selection = 0;
-                insertion = 0;
-                merge = 0;
-                quick = 0;
+                bubble = selection = insertion = merge = quick = 0;
             }
         }
     }
